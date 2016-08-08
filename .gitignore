@@ -183,4 +183,4 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 # Avoid log
-.log
+*.log

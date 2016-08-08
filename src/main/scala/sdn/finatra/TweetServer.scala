@@ -1,21 +1,18 @@
 package sdn.finatra
 
-import com.twitter.finagle.Http
 import com.twitter.finatra.http.HttpServer
 import com.twitter.finatra.http.filters.CommonFilters
 import com.twitter.finatra.http.routing.HttpRouter
 import com.twitter.finatra.thrift.ThriftServer
-import com.twitter.finatra.thrift.filters.{LoggingMDCFilter, StatsFilter, ThriftMDCFilter}
+import com.twitter.finatra.thrift.filters.LoggingMDCFilter
 import com.twitter.finatra.thrift.routing.ThriftRouter
-import com.twitter.inject.server.TwitterServer
 import sdn.finatra.controllers.http.TweetController
 import sdn.finatra.controllers.thrift.ThriftTweetControler
-
-import scala.concurrent.Await
 
 /**
   * Created by SangDang on 8/5/16.
   */
+object TweetServerMain extends TweetServer
 class TweetServer extends HttpServer with ThriftServer {
   override protected def disableAdminHttpServer: Boolean = true
 
