@@ -24,15 +24,15 @@ object TweetServiceClient {
   }
 }
 
-class ThriftTweetExternalTest extends Test {
-  val client = TweetServiceClient.buildClient(new InetSocketAddress("localhost", 9090))
-  "tweet success" in {
-    val response:Future[TTweetResponse] = client.addTweet(TTweetRequest.apply(id = "123", "hello"))
-    val result=Await.result(response)
-    result.id should equal("123")
-    result.message should equal("hello")
-    result.location should equal(None)
-    result.sensitive should equal(None)
-  }
-
-}
+//class ThriftTweetExternalTest extends Test {
+//  val client = TweetServiceClient.buildClient(new InetSocketAddress("localhost", 9090))
+//  "tweet success" in {
+//    val response:Future[TTweetResponse] = client.addTweet(TTweetRequest.apply(id = "123", "hello"))
+//    val result=Await.result(response)
+//    result.id should equal("123")
+//    result.message should equal("hello")
+//    result.location should equal(None)
+//    result.sensitive should equal(None)
+//  }
+//
+//}

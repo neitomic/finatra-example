@@ -1,0 +1,253 @@
+2016-08-08 16:27:35,801 INF                  ThriftTweetServerMain$    Process started
+2016-08-08 16:27:37,729 INF                  ThriftTweetServerMain$    Resolving Finagle clients before warmup
+2016-08-08 16:27:37,734 INF                  ThriftTweetServerMain$    Done resolving clients: [].
+2016-08-08 16:27:37,737 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=7efeb4cc2babd7c99731090fa76ad960627fce14)
+2016-08-08 16:27:37,808 INF                  ThriftRouter              Adding methods
+
+2016-08-08 16:27:37,809 ERR                  ThriftRouter              sdn.finatra.controllers.thrift.ThriftTweetControler contains no methods!
+2016-08-08 16:27:37,836 INF                  ThriftTweetServerMain$    Warming up.
+2016-08-08 16:27:38,172 INF                  ThriftTweetServerMain$    thrift server started on port: 9090
+2016-08-08 16:27:38,175 INF                  ThriftTweetServerMain$    Enabling health endpoint on port 9990
+2016-08-08 16:27:38,210 INF                  ThriftTweetServerMain$    sdn.finatra.ThriftTweetServerMain started.
+2016-08-08 16:27:38,211 INF                  ThriftTweetServerMain$    Startup complete, server ready.
+2016-08-08 16:28:25,902 INF                  ClockedDrainer            Drainer is disabled; bypassing
+2016-08-08 17:01:36,872 INF                  TweetServer               Process started
+2016-08-08 17:01:38,588 INF                  TweetServer               Resolving Finagle clients before warmup
+2016-08-08 17:01:38,593 INF                  TweetServer               Done resolving clients: [].
+2016-08-08 17:01:38,595 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=7efeb4cc2babd7c99731090fa76ad960627fce14)
+2016-08-08 17:01:38,740 INF                  TweetServer               Warming up.
+2016-08-08 17:01:38,854 INF                  HttpRouter                Adding routes
+POST    /tweet
+2016-08-08 17:01:38,860 INF                  TweetServer                => com.twitter.server.handler.AdminRedirectHandler
+2016-08-08 17:01:38,861 INF                  TweetServer               /admin => com.twitter.server.handler.SummaryHandler
+2016-08-08 17:01:38,861 INF                  TweetServer               /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:01:38,861 INF                  TweetServer               /admin/contention => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:01:38,861 INF                  TweetServer               /admin/lint => com.twitter.server.handler.LintHandler
+2016-08-08 17:01:38,861 INF                  TweetServer               /admin/lint.json => com.twitter.server.handler.LintHandler
+2016-08-08 17:01:38,861 INF                  TweetServer               /admin/threads => com.twitter.server.handler.ThreadsHandler
+2016-08-08 17:01:38,862 INF                  TweetServer               /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2016-08-08 17:01:38,862 INF                  TweetServer               /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:01:38,862 INF                  TweetServer               /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:01:38,862 INF                  TweetServer               /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2016-08-08 17:01:38,862 INF                  TweetServer               /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2016-08-08 17:01:38,862 INF                  TweetServer               /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2016-08-08 17:01:38,862 INF                  TweetServer               /admin/ping => com.twitter.server.handler.ReplyHandler
+2016-08-08 17:01:38,863 INF                  TweetServer               /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2016-08-08 17:01:38,863 INF                  TweetServer               /admin/tracing => com.twitter.server.handler.TracingHandler
+2016-08-08 17:01:38,863 INF                  TweetServer               /admin/events => com.twitter.server.handler.EventsHandler
+2016-08-08 17:01:38,863 INF                  TweetServer               /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2016-08-08 17:01:38,864 INF                  TweetServer               /admin/logging => com.twitter.server.handler.LoggingHandler
+2016-08-08 17:01:38,864 INF                  TweetServer               /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2016-08-08 17:01:38,865 INF                  TweetServer               /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2016-08-08 17:01:38,865 INF                  TweetServer               /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2016-08-08 17:01:38,865 INF                  TweetServer               /admin/files/ => com.twitter.server.handler.ResourceHandler
+2016-08-08 17:01:38,865 INF                  TweetServer               /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2016-08-08 17:01:38,866 INF                  TweetServer               /admin/toggles => com.twitter.server.handler.ToggleHandler
+2016-08-08 17:01:38,866 INF                  TweetServer               /favicon.ico => com.twitter.server.handler.ResourceHandler
+2016-08-08 17:01:38,866 INF                  TweetServer               /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2016-08-08 17:01:38,866 INF                  TweetServer               /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2016-08-08 17:01:38,917 INF                  TweetServer               http server started on port: 8888
+2016-08-08 17:01:38,918 INF                  TweetServer               Enabling health endpoint on port 9990
+2016-08-08 17:01:38,919 INF                  TweetServer               sdn.finatra.TweetServer started.
+2016-08-08 17:01:38,920 INF                  TweetServer               Startup complete, server ready.
+2016-08-08 17:02:45,516 INF                  TweetServer               Process started
+2016-08-08 17:02:48,168 INF                  TweetServer               Resolving Finagle clients before warmup
+2016-08-08 17:02:48,174 INF                  TweetServer               Done resolving clients: [].
+2016-08-08 17:02:48,178 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=7efeb4cc2babd7c99731090fa76ad960627fce14)
+2016-08-08 17:02:48,315 INF                  TweetServer               Warming up.
+2016-08-08 17:02:48,469 INF                  HttpRouter                Adding routes
+POST    /tweet
+2016-08-08 17:02:48,481 INF                  TweetServer                => com.twitter.server.handler.AdminRedirectHandler
+2016-08-08 17:02:48,482 INF                  TweetServer               /admin => com.twitter.server.handler.SummaryHandler
+2016-08-08 17:02:48,482 INF                  TweetServer               /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:02:48,483 INF                  TweetServer               /admin/contention => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:02:48,483 INF                  TweetServer               /admin/lint => com.twitter.server.handler.LintHandler
+2016-08-08 17:02:48,484 INF                  TweetServer               /admin/lint.json => com.twitter.server.handler.LintHandler
+2016-08-08 17:02:48,484 INF                  TweetServer               /admin/threads => com.twitter.server.handler.ThreadsHandler
+2016-08-08 17:02:48,485 INF                  TweetServer               /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2016-08-08 17:02:48,485 INF                  TweetServer               /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:02:48,486 INF                  TweetServer               /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:02:48,486 INF                  TweetServer               /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2016-08-08 17:02:48,486 INF                  TweetServer               /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2016-08-08 17:02:48,487 INF                  TweetServer               /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2016-08-08 17:02:48,488 INF                  TweetServer               /admin/ping => com.twitter.server.handler.ReplyHandler
+2016-08-08 17:02:48,488 INF                  TweetServer               /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2016-08-08 17:02:48,488 INF                  TweetServer               /admin/tracing => com.twitter.server.handler.TracingHandler
+2016-08-08 17:02:48,488 INF                  TweetServer               /admin/events => com.twitter.server.handler.EventsHandler
+2016-08-08 17:02:48,488 INF                  TweetServer               /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2016-08-08 17:02:48,488 INF                  TweetServer               /admin/logging => com.twitter.server.handler.LoggingHandler
+2016-08-08 17:02:48,488 INF                  TweetServer               /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2016-08-08 17:02:48,489 INF                  TweetServer               /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2016-08-08 17:02:48,489 INF                  TweetServer               /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2016-08-08 17:02:48,489 INF                  TweetServer               /admin/files/ => com.twitter.server.handler.ResourceHandler
+2016-08-08 17:02:48,489 INF                  TweetServer               /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2016-08-08 17:02:48,490 INF                  TweetServer               /admin/toggles => com.twitter.server.handler.ToggleHandler
+2016-08-08 17:02:48,490 INF                  TweetServer               /favicon.ico => com.twitter.server.handler.ResourceHandler
+2016-08-08 17:02:48,490 INF                  TweetServer               /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2016-08-08 17:02:48,490 INF                  TweetServer               /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2016-08-08 17:02:48,572 INF                  TweetServer               http server started on port: 8888
+2016-08-08 17:02:48,575 INF                  TweetServer               Enabling health endpoint on port 9990
+2016-08-08 17:02:48,581 INF                  TweetServer               sdn.finatra.TweetServer started.
+2016-08-08 17:02:48,665 INF                  TweetServer               Startup complete, server ready.
+2016-08-08 17:07:05,440 INF                  ShutdownHandler           [/admin/shutdown] from 0:0:0:0:0:0:0:1 quitting
+2016-08-08 17:07:05,476 WAR                  App$                      Multiple com.twitter.app.App main methods called. sdn.finatra.TweetServer, then sdn.finatra.ThriftTweetServer
+2016-08-08 17:07:05,476 INF                  ThriftTweetServer         Process started
+2016-08-08 17:07:05,567 INF                  ThriftTweetServer         Resolving Finagle clients before warmup
+2016-08-08 17:07:05,567 INF                  ThriftTweetServer         Done resolving clients: [].
+2016-08-08 17:07:05,567 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=7efeb4cc2babd7c99731090fa76ad960627fce14)
+2016-08-08 17:07:05,596 INF                  ThriftRouter              Adding methods
+
+2016-08-08 17:07:05,597 ERR                  ThriftRouter              sdn.finatra.controllers.thrift.ThriftTweetControler contains no methods!
+2016-08-08 17:07:05,629 INF                  ThriftTweetServer         Warming up.
+2016-08-08 17:07:05,911 INF                  ThriftTweetServer         thrift server started on port: 9090
+2016-08-08 17:07:05,911 INF                  ThriftTweetServer         Enabling health endpoint on port 9990
+2016-08-08 17:07:05,911 INF                  ThriftTweetServer         sdn.finatra.ThriftTweetServer started.
+2016-08-08 17:07:05,911 INF                  ThriftTweetServer         Startup complete, server ready.
+2016-08-08 17:07:33,120 INF                  ShutdownHandler           [/admin/shutdown] from 0:0:0:0:0:0:0:1 quitting
+2016-08-08 17:11:48,298 INF                  TweetServer               Process started
+2016-08-08 17:11:50,263 INF                  TweetServer               Resolving Finagle clients before warmup
+2016-08-08 17:11:50,271 INF                  TweetServer               Done resolving clients: [].
+2016-08-08 17:11:50,437 INF                  TweetServer               Warming up.
+2016-08-08 17:11:50,526 INF                  HttpRouter                Adding routes
+POST    /tweet
+2016-08-08 17:11:50,531 INF                  TweetServer                => com.twitter.server.handler.AdminRedirectHandler
+2016-08-08 17:11:50,531 INF                  TweetServer               /admin => com.twitter.server.handler.SummaryHandler
+2016-08-08 17:11:50,532 INF                  TweetServer               /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:11:50,532 INF                  TweetServer               /admin/contention => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:11:50,532 INF                  TweetServer               /admin/lint => com.twitter.server.handler.LintHandler
+2016-08-08 17:11:50,532 INF                  TweetServer               /admin/lint.json => com.twitter.server.handler.LintHandler
+2016-08-08 17:11:50,533 INF                  TweetServer               /admin/threads => com.twitter.server.handler.ThreadsHandler
+2016-08-08 17:11:50,533 INF                  TweetServer               /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2016-08-08 17:11:50,535 INF                  TweetServer               /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:11:50,535 INF                  TweetServer               /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:11:50,535 INF                  TweetServer               /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2016-08-08 17:11:50,536 INF                  TweetServer               /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2016-08-08 17:11:50,536 INF                  TweetServer               /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2016-08-08 17:11:50,536 INF                  TweetServer               /admin/ping => com.twitter.server.handler.ReplyHandler
+2016-08-08 17:11:50,536 INF                  TweetServer               /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2016-08-08 17:11:50,536 INF                  TweetServer               /admin/tracing => com.twitter.server.handler.TracingHandler
+2016-08-08 17:11:50,536 INF                  TweetServer               /admin/events => com.twitter.server.handler.EventsHandler
+2016-08-08 17:11:50,537 INF                  TweetServer               /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2016-08-08 17:11:50,537 INF                  TweetServer               /admin/logging => com.twitter.server.handler.LoggingHandler
+2016-08-08 17:11:50,538 INF                  TweetServer               /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2016-08-08 17:11:50,539 INF                  TweetServer               /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2016-08-08 17:11:50,540 INF                  TweetServer               /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2016-08-08 17:11:50,541 INF                  TweetServer               /admin/files/ => com.twitter.server.handler.ResourceHandler
+2016-08-08 17:11:50,541 INF                  TweetServer               /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2016-08-08 17:11:50,541 INF                  TweetServer               /admin/toggles => com.twitter.server.handler.ToggleHandler
+2016-08-08 17:11:50,541 INF                  TweetServer               /favicon.ico => com.twitter.server.handler.ResourceHandler
+2016-08-08 17:11:50,541 INF                  TweetServer               /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2016-08-08 17:11:50,541 INF                  TweetServer               /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2016-08-08 17:11:50,594 INF                  TweetServer               http server started on port: 8080
+2016-08-08 17:11:50,595 INF                  TweetServer               Enabling health endpoint on port 9990
+2016-08-08 17:11:50,597 INF                  TweetServer               sdn.finatra.TweetServer started.
+2016-08-08 17:11:50,597 INF                  TweetServer               Startup complete, server ready.
+2016-08-08 17:17:39,216 INF                  TweetServer               Process started
+2016-08-08 17:17:43,687 INF                  TweetServer               Resolving Finagle clients before warmup
+2016-08-08 17:17:43,702 INF                  TweetServer               Done resolving clients: [].
+2016-08-08 17:17:43,705 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=7efeb4cc2babd7c99731090fa76ad960627fce14)
+2016-08-08 17:17:44,238 INF                  TweetServer               Warming up.
+2016-08-08 17:17:44,417 INF                  HttpRouter                Adding routes
+POST    /tweet
+2016-08-08 17:17:44,424 INF                  TweetServer                => com.twitter.server.handler.AdminRedirectHandler
+2016-08-08 17:17:44,424 INF                  TweetServer               /admin => com.twitter.server.handler.SummaryHandler
+2016-08-08 17:17:44,424 INF                  TweetServer               /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:17:44,424 INF                  TweetServer               /admin/contention => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:17:44,424 INF                  TweetServer               /admin/lint => com.twitter.server.handler.LintHandler
+2016-08-08 17:17:44,425 INF                  TweetServer               /admin/lint.json => com.twitter.server.handler.LintHandler
+2016-08-08 17:17:44,425 INF                  TweetServer               /admin/threads => com.twitter.server.handler.ThreadsHandler
+2016-08-08 17:17:44,425 INF                  TweetServer               /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2016-08-08 17:17:44,425 INF                  TweetServer               /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:17:44,425 INF                  TweetServer               /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:17:44,425 INF                  TweetServer               /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2016-08-08 17:17:44,425 INF                  TweetServer               /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2016-08-08 17:17:44,425 INF                  TweetServer               /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2016-08-08 17:17:44,425 INF                  TweetServer               /admin/ping => com.twitter.server.handler.ReplyHandler
+2016-08-08 17:17:44,425 INF                  TweetServer               /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2016-08-08 17:17:44,426 INF                  TweetServer               /admin/tracing => com.twitter.server.handler.TracingHandler
+2016-08-08 17:17:44,426 INF                  TweetServer               /admin/events => com.twitter.server.handler.EventsHandler
+2016-08-08 17:17:44,426 INF                  TweetServer               /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2016-08-08 17:17:44,426 INF                  TweetServer               /admin/logging => com.twitter.server.handler.LoggingHandler
+2016-08-08 17:17:44,426 INF                  TweetServer               /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2016-08-08 17:17:44,426 INF                  TweetServer               /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2016-08-08 17:17:44,426 INF                  TweetServer               /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2016-08-08 17:17:44,427 INF                  TweetServer               /admin/files/ => com.twitter.server.handler.ResourceHandler
+2016-08-08 17:17:44,427 INF                  TweetServer               /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2016-08-08 17:17:44,427 INF                  TweetServer               /admin/toggles => com.twitter.server.handler.ToggleHandler
+2016-08-08 17:17:44,427 INF                  TweetServer               /favicon.ico => com.twitter.server.handler.ResourceHandler
+2016-08-08 17:17:44,427 INF                  TweetServer               /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2016-08-08 17:17:44,428 INF                  TweetServer               /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2016-08-08 17:17:44,582 INF                  TweetServer               http server started on port: 8080
+2016-08-08 17:17:44,584 INF                  TweetServer               Enabling health endpoint on port 9990
+2016-08-08 17:17:44,586 INF                  TweetServer               sdn.finatra.TweetServer started.
+2016-08-08 17:17:44,588 INF                  TweetServer               Startup complete, server ready.
+2016-08-08 17:21:14,930 INF                  ShutdownHandler           [/admin/shutdown] from 0:0:0:0:0:0:0:1 quitting
+2016-08-08 17:21:14,973 WAR                  App$                      Multiple com.twitter.app.App main methods called. sdn.finatra.TweetServer, then sdn.finatra.ThriftTweetServer
+2016-08-08 17:21:14,974 INF                  ThriftTweetServer         Process started
+2016-08-08 17:21:15,121 INF                  ThriftTweetServer         Resolving Finagle clients before warmup
+2016-08-08 17:21:15,121 INF                  ThriftTweetServer         Done resolving clients: [].
+2016-08-08 17:21:15,121 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=7efeb4cc2babd7c99731090fa76ad960627fce14)
+2016-08-08 17:21:15,188 INF                  ThriftRouter              Adding methods
+
+2016-08-08 17:21:15,189 ERR                  ThriftRouter              sdn.finatra.controllers.thrift.ThriftTweetControler contains no methods!
+2016-08-08 17:21:15,219 INF                  ThriftTweetServer         Warming up.
+2016-08-08 17:21:15,407 INF                  ThriftTweetServer         thrift server started on port: 9090
+2016-08-08 17:21:15,408 INF                  ThriftTweetServer         Enabling health endpoint on port 9990
+2016-08-08 17:21:15,408 INF                  ThriftTweetServer         sdn.finatra.ThriftTweetServer started.
+2016-08-08 17:21:15,408 INF                  ThriftTweetServer         Startup complete, server ready.
+2016-08-08 17:21:27,874 INF                  ShutdownHandler           [/admin/shutdown] from 0:0:0:0:0:0:0:1 quitting
+2016-08-08 17:30:28,292 INF                  TweetServer               Process started
+2016-08-08 17:30:29,951 INF                  TweetServer               Resolving Finagle clients before warmup
+2016-08-08 17:30:29,955 INF                  TweetServer               Done resolving clients: [].
+2016-08-08 17:30:29,957 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=7efeb4cc2babd7c99731090fa76ad960627fce14)
+2016-08-08 17:30:30,164 INF                  TweetServer               Warming up.
+2016-08-08 17:30:30,245 INF                  HttpRouter                Adding routes
+POST    /tweet
+2016-08-08 17:30:30,250 INF                  TweetServer                => com.twitter.server.handler.AdminRedirectHandler
+2016-08-08 17:30:30,250 INF                  TweetServer               /admin => com.twitter.server.handler.SummaryHandler
+2016-08-08 17:30:30,251 INF                  TweetServer               /admin/server_info => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:30:30,251 INF                  TweetServer               /admin/contention => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:30:30,251 INF                  TweetServer               /admin/lint => com.twitter.server.handler.LintHandler
+2016-08-08 17:30:30,251 INF                  TweetServer               /admin/lint.json => com.twitter.server.handler.LintHandler
+2016-08-08 17:30:30,251 INF                  TweetServer               /admin/threads => com.twitter.server.handler.ThreadsHandler
+2016-08-08 17:30:30,251 INF                  TweetServer               /admin/threads.json => com.twitter.server.handler.ThreadsHandler
+2016-08-08 17:30:30,251 INF                  TweetServer               /admin/announcer => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:30:30,252 INF                  TweetServer               /admin/dtab => com.twitter.finagle.Filter$$anon$1
+2016-08-08 17:30:30,252 INF                  TweetServer               /admin/pprof/heap => com.twitter.server.handler.HeapResourceHandler
+2016-08-08 17:30:30,252 INF                  TweetServer               /admin/pprof/profile => com.twitter.server.handler.ProfileResourceHandler
+2016-08-08 17:30:30,252 INF                  TweetServer               /admin/pprof/contention => com.twitter.server.handler.ProfileResourceHandler
+2016-08-08 17:30:30,252 INF                  TweetServer               /admin/ping => com.twitter.server.handler.ReplyHandler
+2016-08-08 17:30:30,252 INF                  TweetServer               /admin/shutdown => com.twitter.server.handler.ShutdownHandler
+2016-08-08 17:30:30,252 INF                  TweetServer               /admin/tracing => com.twitter.server.handler.TracingHandler
+2016-08-08 17:30:30,252 INF                  TweetServer               /admin/events => com.twitter.server.handler.EventsHandler
+2016-08-08 17:30:30,253 INF                  TweetServer               /admin/events/record/ => com.twitter.server.handler.EventRecordingHandler
+2016-08-08 17:30:30,253 INF                  TweetServer               /admin/logging => com.twitter.server.handler.LoggingHandler
+2016-08-08 17:30:30,253 INF                  TweetServer               /admin/metrics => com.twitter.server.handler.MetricQueryHandler
+2016-08-08 17:30:30,253 INF                  TweetServer               /admin/clients/ => com.twitter.server.handler.ClientRegistryHandler
+2016-08-08 17:30:30,253 INF                  TweetServer               /admin/servers/ => com.twitter.server.handler.ServerRegistryHandler
+2016-08-08 17:30:30,253 INF                  TweetServer               /admin/files/ => com.twitter.server.handler.ResourceHandler
+2016-08-08 17:30:30,253 INF                  TweetServer               /admin/registry.json => com.twitter.server.handler.RegistryHandler
+2016-08-08 17:30:30,254 INF                  TweetServer               /admin/toggles => com.twitter.server.handler.ToggleHandler
+2016-08-08 17:30:30,254 INF                  TweetServer               /favicon.ico => com.twitter.server.handler.ResourceHandler
+2016-08-08 17:30:30,254 INF                  TweetServer               /admin/histograms => com.twitter.server.handler.HistogramQueryHandler
+2016-08-08 17:30:30,254 INF                  TweetServer               /admin/histograms.json => com.twitter.server.handler.HistogramQueryHandler
+2016-08-08 17:30:30,308 INF                  TweetServer               http server started on port: 8080
+2016-08-08 17:30:30,309 INF                  TweetServer               Enabling health endpoint on port 9990
+2016-08-08 17:30:30,311 INF                  TweetServer               sdn.finatra.TweetServer started.
+2016-08-08 17:30:30,312 INF                  TweetServer               Startup complete, server ready.
+2016-08-08 17:32:19,626 INF                  TweetServer               Process started
+2016-08-08 17:32:19,626 INF                  ThriftTweetServer         Process started
+2016-08-08 18:17:20,959 INF                  ThriftTweetServer         Process started
+2016-08-08 18:17:20,959 INF                  TweetServer               Process started
+2016-08-08 18:20:16,512 INF                  TweetServer               Process started
+2016-08-08 18:20:16,512 INF                  ThriftTweetServer         Process started
+2016-08-08 18:28:12,703 INF                  TweetServer               Process started
+2016-08-08 18:28:12,703 INF                  ThriftTweetServer         Process started
+2016-08-08 18:30:01,053 INF                  ThriftTweetServer         Process started
+2016-08-08 18:30:01,053 INF                  TweetServer               Process started
+2016-08-08 18:30:29,810 INF                  ThriftTweetServer         Process started
+2016-08-08 18:30:29,810 INF                  TweetServer               Process started
+2016-08-08 18:31:30,398 INF                  TweetServer               Process started
+2016-08-08 18:31:30,398 INF                  ThriftTweetServer         Process started
+2016-08-08 18:32:17,137 INF                  ThriftTweetServer         Process started
+2016-08-08 18:32:17,137 INF                  TweetServer               Process started
