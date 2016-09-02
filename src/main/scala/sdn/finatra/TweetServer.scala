@@ -14,7 +14,7 @@ import sdn.finatra.controllers.thrift.ThriftTweetControler
   */
 object TweetServerMain extends TweetServer
 class TweetServer extends HttpServer with ThriftServer {
-  override protected def disableAdminHttpServer: Boolean = true
+  override protected def disableAdminHttpServer: Boolean = false
 
   override protected def defaultFinatraHttpPort: String = ":8080"
 

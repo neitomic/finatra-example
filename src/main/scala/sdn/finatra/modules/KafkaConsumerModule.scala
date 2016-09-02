@@ -14,6 +14,6 @@ class KafkaConsumerModule extends AbstractModule{
     bind(classOf[HDFSFormatWriter]).to(classOf[HDFSParquetWriter])
     bind(classOf[SchemaLoader]).to(classOf[LocalFileSchemaLoader])
     install(new FactoryModuleBuilder()
-      .build(classOf[KafkaConsumerFactory]))
+      .build(classOf[KafkaConsumerFactory] ))
   }
 }

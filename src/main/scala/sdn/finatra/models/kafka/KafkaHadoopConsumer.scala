@@ -20,7 +20,7 @@ class KafkaHadoopConsumer @Inject() (
                            writer: HDFSFormatWriter,
                            schemaLoader: SchemaLoader,
                            @Assisted properties: Properties
-                         ) extends Thread{
+                         ) extends Thread {
   val topic = properties.getProperty("topic.name")
   val minBashSize = properties.getProperty("batch.MinSize").toInt
   val schema = schemaLoader.loadSchema(topic)
@@ -51,5 +51,4 @@ class KafkaHadoopConsumer @Inject() (
       }
     }
   }
-
 }

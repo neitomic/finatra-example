@@ -6,3 +6,8 @@ package sdn.finatra.models.schema
 class Schema {
 
 }
+
+trait Type
+
+case class PrimitiveType() extends Type{}
+

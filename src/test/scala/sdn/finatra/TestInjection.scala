@@ -2,7 +2,7 @@ package sdn.finatra
 
 import java.util.Properties
 
-import com.google.inject.Guice
+import com.google.inject.{Guice, Inject}
 import sdn.finatra.modules.KafkaConsumerModule
 import sdn.finatra.models.kafka.KafkaConsumerFactory
 
@@ -13,9 +13,9 @@ object TestInjection {
 
 
   def main(args: Array[String]): Unit = {
-    val properties = new Properties();
-    properties.put("topic.name", "test");
-    properties.put("batch.MinSize", "122");
+    val properties = new Properties()
+    properties.put("topic.name", "test")
+    properties.put("batch.MinSize", "122")
     val injector = Guice.createInjector(new KafkaConsumerModule)
     val factory = injector.getInstance(classOf[KafkaConsumerFactory])
     val consumer = factory.create(properties)
