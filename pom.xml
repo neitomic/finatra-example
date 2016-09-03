@@ -55,6 +55,20 @@
           <!--<version>4.6.0</version>-->
       <!--</dependency>-->
 
+    <!-- Guice -->
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+      <version>4.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.inject.extensions/guice-multibindings -->
+    <dependency>
+      <groupId>com.google.inject.extensions</groupId>
+      <artifactId>guice-multibindings</artifactId>
+      <version>4.0</version>
+    </dependency>
+
+
     <!-- Scala -->
     <dependency>
       <groupId>org.scala-lang</groupId>
